@@ -8,7 +8,7 @@ RUN mkdir -p /opt/sinopia/storage
 RUN chown -R sinopia:sinopia /opt/sinopia
 USER sinopia
 WORKDIR /opt/sinopia
-ADD /config_gen.js /opt/sinopia/config_gen.js
-ADD /start.sh /opt/sinopia/start.sh
-CMD ["/opt/sinopia/start.sh"]
+ADD /config_gen.js /home/sinopia/config_gen.js
+ADD /start.sh /home/sinopia/start.sh
+CMD ["/home/sinopia/start.sh"]
 EXPOSE 4873
